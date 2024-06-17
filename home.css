@@ -2,12 +2,18 @@
     font-family: 'Sanchez';
     src: url('/fonts/Sanchez/Sanchez-Regular.ttf');
 }
-/* Header */
+@font-face {
+    font-family: 'Petrona';
+    src: url('/fonts/Petrona/Petrona-VariableFont_wght.ttf');
+}
+
 *{
     font-family: "Sanchez", serif;
     padding: 0;
     margin: 0;
 }
+
+/* Header */
 a{
     color:black;
     text-decoration: none;
@@ -15,25 +21,21 @@ a{
 li{
     list-style-type: none;
 }
-.logo{
+.logoHeader{
     float: left;
-    width: 180px;
+    width: 150px;
     display: flex;
-    flex-direction: row;
-    align-self:flex-start;
-    justify-self: flex-start;
-    padding: 0;
-    margin: 0px;
+    justify-self: center;
+    align-self:baseline;
+    padding: 15px 0 0 50px;
 }
-.navbar{
-    margin: 0;
-    max-width: 100%;
-    overflow: visible;
-    background-color: white;
-    height: 90px;
-    padding: 0;
+.barRight{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    padding: 10px 20px 0 0;
 }
-nav ul{
+.centerNav .navPages{
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
@@ -43,25 +45,28 @@ nav ul{
 .navbar a:hover { 
     border-bottom: 3px solid #E6A197;
 }
-#HomePage{
+#homePage{
     border-bottom: 3px solid #E6A197;
 } 
+#account img{
+    display: none;
+}
+
 /* Header responsive */
 @media (max-width: 900px) {
-    header {
-        padding: 10px;
+.logoHeader {
+        width: 120px;
+        padding-top: 40px;
     }
-
-    header .logo {
-        width: 180px;
-    }
-
-    nav .NavPages{
+    .centerNav .navPages{
         display: flex;
         flex-direction: column;
         align-items: flex-end ;
         margin: 0;
-        padding: 0;
+        padding: 0 20px 0 0;
+    }
+    .barRight{
+        padding: 10px 20px 10px 0;
     }
 }
 
@@ -74,12 +79,17 @@ footer{
     justify-content: space-between;
     position: fixed;
     bottom: 0px;
-    background-color: beige;
     width: 100%;
     height: 80px;
     padding: 5px 5px 0px 5px;
 }
-.LogoFooter img{
+/* .LogoFooter{
+    display: flex;
+    align-self: flex-end;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+} */
+.logoFooter img{
     width: 180px;
     align-self: baseline;
 }
@@ -91,14 +101,25 @@ footer{
     padding-bottom: 10px;
     gap: 3px;
 }
-/* .Networking{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items:last baseline;
+.networking img{
+    width: 30px;    
 }
-.Mail{
-    display:flex;
-    flex-direction: column-reverse;
-    
-}  */
+.autres{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: right;
+    padding: 10px 10px 0 ;
+}
+footer p:hover{
+    text-decoration: underline 2px#E6A197;
+}
+
+@media (max-width:700px){
+    .logoFooter{
+        width: auto;
+    }
+    footer{
+        font-size: 0.82em;
+    }
+}
