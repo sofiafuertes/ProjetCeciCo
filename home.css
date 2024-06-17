@@ -81,17 +81,12 @@ footer{
     bottom: 0px;
     width: 100%;
     height: 80px;
-    padding: 5px 5px 0px 5px;
+    /* padding: 5px 5px 0px 5px; */
 }
-/* .LogoFooter{
-    display: flex;
-    align-self: flex-end;
-    font-size: 1.2em;
-    padding-bottom: 5px;
-} */
+
 .logoFooter img{
     width: 180px;
-    align-self: baseline;
+    /* justify-content: flex-end; */
 }
 .centerFooter{
     display: flex;
@@ -104,12 +99,12 @@ footer{
 .networking img{
     width: 30px;    
 }
-.autres{
+.footerRight{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
     text-align: right;
-    padding: 10px 10px 0 ;
+    padding: 10px 10px 10px 0;
 }
 footer p:hover{
     text-decoration: underline 2px#E6A197;
@@ -123,3 +118,21 @@ footer p:hover{
         font-size: 0.82em;
     }
 }
+@media (max-width:400px){
+    footer{
+        height: auto;
+    }
+
+    .centerFooter{
+        align-self:flex-end;
+        align-items: flex-end;
+        padding: 0 5px 0 0;
+    }
+    .footerRight{
+        align-self: flex-end;
+        text-align: right;
+    }
+    .logoFooter{
+        align-content: flex-end;
+    }
+    }
