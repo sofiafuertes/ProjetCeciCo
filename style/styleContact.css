@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Sanchez';
+    src: url('/fonts/Sanchez/Sanchez-Regular.ttf');
+}
+@font-face {
+    font-family: 'Petrona';
+    src: url('/fonts/Petrona/Petrona-VariableFont_wght.ttf');
+}
+
+*{
+    font-family: "Sanchez", serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 170px;
+    background-color: rgb(255, 255, 255);
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.logoHeader{
+    float: left;
+    width: 150px;
+    padding: 15px 0 0 50px;
+}
+.barRight{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    padding: 10px 20px 0 0;
+    align-items: center;
+}
+.centerNav .navPages{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 50px;
+}
+.navbar a:hover { 
+    border-bottom: 3px solid #E6A197;
+}
+#contact{
+    border-bottom: 3px solid #E6A197;
+} 
+#account img{
+    display: none;
+}
+#hamburgerMenu{
+    font-size: 1.8em;
+    display: none;
+}
+
+
+/* Header responsive */
+@media (max-width: 900px) {
+.logoHeader {
+        width: 120px;
+        /* padding-top: 40px; */
+    }
+    .centerNav .navPages{
+        flex-direction: column;
+        display: none;
+        margin: 10px;
+        padding: 5px;     
+        position:relative;
+        gap: 10px;
+        z-index: 3;
+        background-color: white;   
+        border: #E6A197 1.5px solid;     
+        }
+
+    #hamburgerMenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+    }
+    .barRight{
+        padding-top: 70px ;
+    }
+};
+
+/* Main sections */
+main{
+z-index: 1;
+}
+
+p{
+    font-size: 1.3em;
+}
+
+#contactSocialMedia img{
+    width: 30px;    
+}
+
+.pinkLine{
+    width: 100%;
+    height: 5px;
+    background-color: #E6A197;
+    margin-bottom: 5px;
+}
+
+#formContact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+    padding-top: 10px;
+    margin: 30px 50px;
+}
+#formContact form{
+    margin: 30px 30px;
+    /* padding-left: 5px; */
+}
+#formContact p{
+    text-align: center;
+
+}
+#formContact img{
+    margin: 10px 10px;
+    max-height: 550px;
+    max-width: 500px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+form input, select,textarea {
+    font-family: 'Petrona';
+    height: 30px;
+    font-size: 1.2em;
+    border: lightslategray solid 1px;
+    padding-left: 2px;
+
+}
+form textarea{
+    height: auto;
+}
+#divButton{
+    display: flex;
+    justify-content: flex-end;
+}
+form .button { 
+    width: 20%;
+    padding: 5px 10px;
+    background-color: #FFE0E6;
+    border: #E6A197 1px solid;
+}
+
+@media (max-width: 900px) {
+    #formContact{
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    }
+    #thankYouPhoto img{
+    justify-items: center;
+    width: 450px;
+    height: 500px;
+}
+
+    .pinkLine{
+        align-self: center;
+    }
+
+}
+
+#networkingZone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    gap: 5px;
+    padding-bottom: 50px;
+}   
+#contactSocialMedia a{
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+}
+
+.networkingOptions{
+    justify-content: left;
+    padding-bottom: 2px;
+}
+
+.networkingOptions img{
+    padding-right: 5px;
+}
+
+
+
+
+
+/*Footer*/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* position: fixed; */
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+    padding-left:5px ;
+    /* padding: 5px 5px 0px 5px; */
+}
+
+.logoFooter img{
+    width: 180px;
+    /* justify-content: flex-end; */
+}
+.centerFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+    gap: 3px;
+}
+.networking img{
+    width: 30px;    
+}
+.footerRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 10px 10px 10px 0;
+}
+footer p:hover{
+    text-decoration: underline 2px#E6A197;
+}
+
+@media (max-width:700px){
+    .logoFooter{
+        width: auto;
+    }
+    footer{
+        font-size: 0.82em;
+    }
+}
+@media (max-width:400px){
+    footer{
+        height: auto;
+    }
+
+    .centerFooter{
+        align-self:flex-end;
+        align-items: flex-end;
+        padding: 0 5px 0 0;
+    }
+    .footerRight{
+        align-self: flex-end;
+        text-align: right;
+    }
+    .logoFooter{
+        align-content: flex-end;
+    }
+    }

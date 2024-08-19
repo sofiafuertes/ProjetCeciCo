@@ -14,6 +14,13 @@
 }
 
 /* Header */
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 170px;
+    background-color: rgb(255, 255, 255);
+}
 a{
     color:black;
     text-decoration: none;
@@ -24,9 +31,6 @@ li{
 .logoHeader{
     float: left;
     width: 150px;
-    display: flex;
-    justify-self: center;
-    align-self:baseline;
     padding: 15px 0 0 50px;
 }
 .barRight{
@@ -34,6 +38,7 @@ li{
     justify-content: right;
     gap: 10px;
     padding: 10px 20px 0 0;
+    align-items: center;
 }
 .centerNav .navPages{
     display: flex;
@@ -51,28 +56,69 @@ li{
 #account img{
     display: none;
 }
+#hamburgerMenu{
+    font-size: 1.8em;
+    display: none;
+}
+
 
 /* Header responsive */
 @media (max-width: 900px) {
 .logoHeader {
         width: 120px;
-        padding-top: 40px;
+        /* padding-top: 40px; */
     }
     .centerNav .navPages{
+        flex-direction: column;
+        display: none;
+        margin: 10px;
+        padding: 5px;     
+        position:relative;
+        gap: 10px;
+        z-index: 3;
+        background-color: white;   
+        border: #E6A197 1.5px solid;     
+        }
+
+    #hamburgerMenu{
         display: flex;
         flex-direction: column;
-        align-items: flex-end ;
-        margin: 0;
-        padding: 0 20px 0 0;
+        align-items: center ;
     }
     .barRight{
-        padding: 10px 20px 10px 0;
+        padding-top: 70px ;
     }
-}
+};
+
 /* Main sections */
-.collectionHome{
+main{
+z-index: 1;
+}
+/* Carousel */
+
+
+/* Links center */
+#linksCenter{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffe0e62d;
+    padding: 10px 0 10px 0;
+    margin: 20px 0 20px 0;
+}
+#linksCenter :hover{
+    text-decoration: underline 2px #E6A197;
+}
+.iconCenter {
+    text-align: center;
+}
+/* Collections home */
+.collection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
     justify-content: space-evenly;
     margin: 20px 0 20px 0;
 }
@@ -80,11 +126,50 @@ li{
     text-align: center;
     margin-top: 20px;
 }
+#photoCollection h1:hover{
+    text-decoration: underline 2px #E6A197;
+}
 
-.collectionHome img{
-    width: 20%;
+.collectionEgg{
+    background-image: url(photos/photoHome_Eggs.jpeg);
+    background-repeat: no-repeat;
+    background-size: 200px 200px ;
+    height: 200px;
+    width: 200px;
     border: 1px solid black;
 }
+.collectionFaces{
+    background-image: url(photos/photoHome_Faces.jpeg);
+    background-repeat: no-repeat;
+    background-size: 200px 200px ;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+.collectionFlowers{
+    background-image: url(photos/photoHome_Flowers.jpeg);
+    background-repeat: no-repeat;
+    background-size: 200px 200px ;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+.collectionOthers{
+    background-image: url(photos/photoHome_Others.jpeg);
+    background-repeat: no-repeat;
+    background-size: 200px 200px ;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+button{
+    font-size: 3em;
+    background-color: transparent;
+    border: none;
+    padding:150px 0 40px 170px;
+}
+
+
 
 
 

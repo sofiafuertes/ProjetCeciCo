@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/styleContact.css">
+    <script src="https://kit.fontawesome.com/cdc160965e.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <img class="logoHeader" src="/photos/logoHeader.png" alt="Logo CeciCo">
+            <div class="barRight">
+                <img src="/icons/icon_globe.png" alt="Icon language" width="30px">
+                <img src="/icons/icon_cart.png" alt="Icon cart" width="30px">
+                <i class="fa-solid fa-bars" style="color: #E6A197;" id="hamburgerMenu"></i>
+            </div>
+            <div class="centerNav">
+                <nav>
+                    <ul class="navPages">
+                        <li id="homePage"><a href="/home.html">HOME</a></li>
+                        <li id="aboutMe"><a href="/pages/aboutMe.html">ABOUT ME</a></li>
+                        <li id="products"><a href="/pages/products.html">PRODUCTS</a></li>
+                        <li id="contact"><a href="/pages/contact.html">CONTACT</a></li>
+                        <li id="etsyShop"><a
+                                href="https://www.etsy.com/fr/shop/CecicoCeramics?ref=l2-about-shopname&from_page=listing">ETSY
+                                SHOP</a></li>
+                        <li id="login"><a href="/pages/login.html">LOGIN</a></li>
+                        <li id="account"><a href="/pages/account.html"><img src="../icons/icon_user.png" alt="Icon account"
+                                    width="25px"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="formContact">
+            <section id="thankYouPhoto">
+                <img src="/photos/thank_you_contact.png" alt="Thank you message">
+            </section>
+            <section>
+
+                <form>
+                    <div>
+                        <p>For questions related to ceramics bought online, personalize ceramics pieces or any comments,
+                            please fill out this form:</p>
+                        <div class="pinkLine"></div>
+                    </div>
+                    <input type="text" id="name" placeholder="Name *" autofocus required>
+                    <input type="mail" id="mail" pattern="^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$" minlength="8" maxlength="30"
+                        placeholder="Mail *" required>
+                    <select name="sujets" id="subjets">
+                        <option value="personalize">I want a personalize ceramic piece</option>
+                        <option value="reviews">I love your work and i want you to know it!</option>
+                        <option value="problem">I had a problem with an order</option>
+                        <option value="question">Other question</option>
+                    </select>
+                    <textarea name="message" id="message" cols="40" rows="10" maxlength="600" placeholder="Your message *"
+                        required></textarea>
+                    <label>*Required</label>
+                    <div id="divButton">
+                        <input class="button" type="submit" value="SEND">
+                    </div>
+                </form>
+            </section>
+        </div>
+        <section>
+            <div id="networkingZone">
+                <div>
+                    <p>
+                        You can also contact me by mail or follow me on my social media:
+                    </p>
+                    <div class="pinkLine"></div>
+                </div>
+                <div id="contactSocialMedia">
+                    <a href="#">cecicoceramics@gmail.com</a>
+                    <div class="networkingOptions"><a href="https://www.instagram.com/cecico.ceramics/?hl=fr"><img
+                                src="../icons/icon_insta.png" alt="Logo instagram"> /cecico.ceramics</a></div>
+                    <div class="networkingOptions"><a
+                            href="https://www.facebook.com/people/Ceci-Co/100063812362345/"><img
+                                src="../icons/icon_facebook.png" alt="Logo facebook"> Ceci Co</a></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="logoFooter">
+            <a href="#"><img src="/photos/LogoFooter.png" alt="Logo W&B CeciCo"></a>
+        </div>
+
+        <div class="centerFooter">
+            <div class="networking">
+                <a href="https://www.instagram.com/cecico.ceramics/?hl=fr"><img src="/icons/icon_insta.png"
+                        alt="Logo instagram"></a>
+                <a href="https://www.facebook.com/people/Ceci-Co/100063812362345/"><img src="/icons/icon_facebook.png"
+                        alt="Logo Facebook"></a>
+                <a href="https://www.tiktok.com/@cecico.ceramics"><img src="/icons/icon_tiktok.png"
+                        alt="Logo TikTok"></a>
+            </div>
+            <div class="mail">
+                <p>cecicoceramics@gmail.com</p>
+            </div>
+        </div>
+        <div class="footerRight">
+            <a href="/pages/privacyPolicy.html">
+                <p>Privacy Policy</p>
+            </a>
+            <a href="/pages/termsConditions.html">
+                <p>Terms & Conditions</p>
+            </a>
+            <a href="/pages/shippingRefund.html">
+                <p>Shipping & Refund Policy</p>
+            </a>
+        </div>
+    </footer>
+    <script type="module" src="/JavaScript/main.js"></script>
+    <script type="module" src="/JavaScript/forms.js"></script>
+</body>
+
+</html>

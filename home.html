@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/cdc160965e.js" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
 <body>
@@ -12,8 +13,9 @@
         <div class="navbar">
                 <img class="logoHeader" src="/photos/logoHeader.png" alt="Logo CeciCo">
             <div class="barRight">
-                <img src="icons/icon_globe.png" alt="Icon language" width="30px">
-                <img src="icons/icon_cart.png" alt="Icon cart" width="30px">
+                <img src="/icons/icon_globe.png" alt="Icon language" width="30px">
+                <img src="/icons/icon_cart.png" alt="Icon cart" width="30px">
+                <i class="fa-solid fa-bars" style="color: #E6A197;" id="hamburgerMenu" ></i>
             </div>
             <div class="centerNav">
                 <nav >
@@ -28,27 +30,60 @@
                     </ul>    
                 </nav>
             </div>
-        
         </div>
     </header>
-    <main>
+    <main >
         <!-- Future carousel -->
 <section id="carousel"> 
-    <img src="/photos/photoHome_Caroussel.jpeg" alt="photo hands Ceci" width="50%" height="500px">
+    <img src="/photos/photoHome_Caroussel.jpeg" alt="photo hands Ceci" height="500px">
 </section>
 <section id="linksCenter">
-<!-- Icons packaging, made with love and contact -->
- <img src="/icons/eco-packaging.png" alt="">
+    <!-- Icons packaging, made with love and contact -->
+        <div class="iconCenter">
+            <a href="#"><img src="/icons/iconPackaging.svg" alt="Icon responsible packaging and with love" width="150px">
+            <p>Handmade unique pieces</p>
+            <p>Responsible Packaging</p>
+        </a>
+        </div>
+        <div class="iconCenter">
+            <a href="https://www.etsy.com/fr/shop/CecicoCeramics?ref=l2-about-shopname&from_page=listing">
+            <img src="/icons/iconEtsy.svg" alt="Icon Etsy Shop" width="150px">
+            <p>Etsy Shop</p>
+        </a>
+        </div>
+        <div class="iconCenter">
+            <a href="pages/contact.html">
+            <img src="/icons/iconContact.svg" alt="Icon contact me">
+            <p>Contact me</p>
+        </a>
+        </div>
 </section>
 <section id="photoCollection">
-    <h1>COLLECTIONS</h1>
-<div class="collectionHome">
-    <img src="/photos/photoHome_Eggs.jpeg" alt="Differents eggs plates">
+    <h1><a href="pages/products.html">COLLECTIONS</a></h1>
+    <div class="collection">
+        <div class="collectionEgg">
+            <button><a href="/pages/products.html">&#43;</a></button>
+        </div>
+        <div class="collectionFaces">
+            <button><a href="/pages/products.html">&#43;</a></button>
+        </div>
+        <div class="collectionFlowers">
+            <button><a href="/pages/products.html">&#43;</a></button>
+        </div>
+        <div class="collectionOthers">
+            <button><a href="/pages/products.html">&#43;</a></button>
+        </div>
+
+    </div>
+
+    <!-- <div class="collectionHome">
+
+<img src="/photos/photoHome_Eggs.jpeg" alt="Differents eggs plates">
     <img src="/photos/photoHome_Faces.jpeg" alt="Differents faces plates">
     <img src="/photos/photoHome_Flowers.jpeg" alt="Differents flowers plates">
     <img src="/photos/photoHome_Others.jpeg" alt="Differents magnets">
-</div>
-</section>
+ </div>  
+</section> -->
 
     </main>
 <footer>
@@ -78,6 +113,7 @@
         </a>
     </div>
 </footer>
+<script type="module" src="/JavaScript/main.js"></script>
 </body>
 
 </html>
