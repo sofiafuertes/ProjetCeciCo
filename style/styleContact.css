@@ -66,7 +66,8 @@ li{
 @media (max-width: 900px) {
 .logoHeader {
         width: 120px;
-        /* padding-top: 40px; */
+        padding-left: 30px;
+        padding-top: 30px;
     }
     .centerNav .navPages{
         flex-direction: column;

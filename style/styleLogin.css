@@ -14,6 +14,13 @@
 }
 
 /* Header */
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 170px;
+    background-color: rgb(255, 255, 255);
+}
 a{
     color:black;
     text-decoration: none;
@@ -24,9 +31,6 @@ li{
 .logoHeader{
     float: left;
     width: 150px;
-    display: flex;
-    justify-self: center;
-    align-self:baseline;
     padding: 15px 0 0 50px;
 }
 .barRight{
@@ -34,6 +38,7 @@ li{
     justify-content: right;
     gap: 10px;
     padding: 10px 20px 0 0;
+    align-items: center;
 }
 .centerNav .navPages{
     display: flex;
@@ -45,29 +50,122 @@ li{
 .navbar a:hover { 
     border-bottom: 3px solid #E6A197;
 }
-#homePage{
+#login{
     border-bottom: 3px solid #E6A197;
 } 
 #account img{
     display: none;
 }
+#hamburgerMenu{
+    font-size: 1.8em;
+    display: none;
+}
+
 
 /* Header responsive */
 @media (max-width: 900px) {
 .logoHeader {
         width: 120px;
-        padding-top: 40px;
+        /* padding-top: 40px; */
     }
     .centerNav .navPages{
+        flex-direction: column;
+        display: none;
+        margin: 10px;
+        padding: 5px;     
+        position:relative;
+        gap: 10px;
+        z-index: 3;
+        background-color: white;   
+        border: #E6A197 1.5px solid;     
+        }
+
+    #hamburgerMenu{
         display: flex;
         flex-direction: column;
-        align-items: flex-end ;
-        margin: 0;
-        padding: 0 20px 0 0;
+        align-items: center ;
     }
     .barRight{
-        padding: 10px 20px 10px 0;
+        padding-top: 70px ;
     }
+};
+
+/*Main*/
+main{
+    z-index: 1;
+    }
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:flex-start;
+
+}
+.pinkLine{
+    width: 100%;
+    height: 2px;
+    background-color: #E6A197;
+    margin-bottom: 5px;
+}
+section{
+    border: #E6A197 2px solid ;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+}
+section p{
+    margin-bottom: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form input {
+    font-family: 'Petrona';
+    height: 30px;
+    font-size: 1.2em;
+    border: lightslategray solid 1px;
+    padding-left: 2px;
+}
+.forgotpsw{
+    display: flex;
+    justify-content: end;
+    font-size: smaller;
+}
+.forgotpsw:hover{
+    text-decoration: underline #E6A197 solid 1px;
+}
+.divButton{
+    display: flex;
+    justify-content: center;
+}
+.button { 
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: #FFE0E6;
+    border: #E6A197 1px solid;
+}
+.button:hover{
+    background-color: #E6A197;
+    color: white;
+    border: #FFE0E6 1px solid;
+}
+
+@media (max-width: 900px) {
+    article{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pinkLine{
+        align-self: center;
+    }
+
 }
 
 /*Footer*/
@@ -118,21 +216,15 @@ footer p:hover{
         font-size: 0.82em;
     }
 }
-@media (max-width:400px){
+@media (max-width:430px){
     footer{
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
         height: auto;
-    }
-
-    .centerFooter{
-        align-self:flex-end;
-        align-items: flex-end;
-        padding: 0 5px 0 0;
+        margin-top: 30px;
     }
     .footerRight{
-        align-self: flex-end;
-        text-align: right;
+        text-align: center;
     }
-    .logoFooter{
-        align-content: flex-end;
-    }
-    }
+}
