@@ -4,116 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <meta name="description"
+        content="Handmade ceramic pieces, crafted with love and delivered to your home. Shop unique, personalized pieces on our Etsy store.">
+    <link rel="stylesheet" href="./home.css">
     <script src="https://kit.fontawesome.com/cdc160965e.js" crossorigin="anonymous"></script>
-    <title>Home</title>
+    <title>CeciCo Ceramics: Handmade Pieces, Where Art Meets Heart</title>
 </head>
+
 <body>
     <header>
-        <div class="navbar">
-                <img class="logoHeader" src="/photos/logoHeader.png" alt="Logo CeciCo">
-            <div class="barRight">
-                <img src="/icons/icon_globe.png" alt="Icon language" width="30px">
-                <img src="/icons/icon_cart.png" alt="Icon cart" width="30px">
-                <i class="fa-solid fa-bars" style="color: #E6A197;" id="hamburgerMenu" ></i>
-            </div>
-            <div class="centerNav">
-                <nav >
+        <nav aria-label="Main Navigation">
+            <div class="navbar">
+                <a href="index.html"><img class="logoHeader" src="./photos/logoHeader.png" alt="Logo CeciCo"></a>
+                <div class="barRight">
+                    <img src="./icons/icon_globe.png" alt="Icon language" width="30px">
+                    <img src="./icons/icon_cart.png" alt="Icon cart" width="30px">
+                    <i class="fa-solid fa-bars" style="color: #E6A197;" id="hamburgerMenu"></i>
+                </div>
+                <div class="centerNav">
                     <ul class="navPages">
-                        <li id="homePage"><a href="/index.html" >HOME</a></li>
-                        <li id="aboutMe"><a href="/pages/aboutMe.html">ABOUT ME</a></li>
-                        <li id="products"><a href="/pages/products.html">PRODUCTS</a></li>
-                        <li id="contact"><a href="/pages/contact.html">CONTACT</a></li>
-                        <li id="etsyShop"><a href="https://www.etsy.com/fr/shop/CecicoCeramics?ref=l2-about-shopname&from_page=listing">ETSY SHOP</a></li>
-                        <li id="login"><a href="/pages/login.html">LOGIN</a></li>
-                        <li id="account"><a href="/pages/account.html"><img src="icons/icon_user.png" alt="Icon account" width="25px"></a></li>
-                    </ul>    
-                </nav>
-            </div>
+                        <li id="homePage"><a href="./index.html">HOME</a></li>
+                        <li id="aboutMe"><a href="./pages/aboutMe.html">ABOUT ME</a></li>
+                        <li id="products"><a href="./pages/products.html">PRODUCTS</a></li>
+                        <li id="contact"><a href="./pages/contact.html">CONTACT</a></li>
+                        <li id="etsyShop"><a
+                                href="https://www.etsy.com/fr/shop/CecicoCeramics?ref=l2-about-shopname&from_page=listing">ETSY
+                                SHOP</a></li>
+                        <li id="login"><a href="./pages/login.html">LOGIN</a></li>
+                        <li id="account"><a href="./pages/account.html"><img src="./icons/icon_user.png"
+                                    alt="Icon account" width="25px"></a></li>
+                    </ul>
+        </nav>
+        </div>
         </div>
     </header>
-    <main >
-        <!-- Future carousel -->
-<section id="carousel"> 
-    <img src="/photos/photoHome_Caroussel.jpeg" alt="photo hands Ceci" height="500px">
-</section>
-<section id="linksCenter">
-    <!-- Icons packaging, made with love and contact -->
-        <div class="iconCenter">
-            <a href="#"><img src="/icons/iconPackaging.svg" alt="Icon responsible packaging and with love" width="150px">
-            <p>Handmade unique pieces</p>
-            <p>Responsible Packaging</p>
-        </a>
-        </div>
-        <div class="iconCenter">
-            <a href="https://www.etsy.com/fr/shop/CecicoCeramics?ref=l2-about-shopname&from_page=listing">
-            <img src="/icons/iconEtsy.svg" alt="Icon Etsy Shop" width="150px">
-            <p>Etsy Shop</p>
-        </a>
-        </div>
-        <div class="iconCenter">
-            <a href="pages/contact.html">
-            <img src="/icons/iconContact.svg" alt="Icon contact me">
-            <p>Contact me</p>
-        </a>
-        </div>
-</section>
-<section id="photoCollection">
-    <h1><a href="pages/products.html">COLLECTIONS</a></h1>
-    <div class="collection">
-        <div class="collectionEgg">
-            <button><a href="/pages/products.html">&#43;</a></button>
-        </div>
-        <div class="collectionFaces">
-            <button><a href="/pages/products.html">&#43;</a></button>
-        </div>
-        <div class="collectionFlowers">
-            <button><a href="/pages/products.html">&#43;</a></button>
-        </div>
-        <div class="collectionOthers">
-            <button><a href="/pages/products.html">&#43;</a></button>
-        </div>
+    <main>
+    <!--  carousel -->
+        <section id="carousel" aria-label="Website Content Carousel">
+            <div class="slides">
+                <img src="./photos/photo_carousel_1.png" alt="Collections Slide Picture">
+                <div class="text-slide">Collections</div>
+            </div>
+            <div class="slides">
+                <img src="./photos/photo_carousel_2.png" alt="About Me Slide Picture">
+                <div class="text-slide">Cecilia Costa: the creative mind</div>
+            </div>
+            <div class="slides">
+                <img src="./photos/photo_carousel_3.jpeg" alt="Contact me Slide Picture">
+                <div class="text-slide">Contact me</div>
+            </div>
+            <div class="leftArrow"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="rightArrow"><i class="fa-solid fa-angle-right"></i></div>
+            <div id="dots-slides">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </section>
+        <section id="linksCenter">
+            <!-- Icons packaging, made with love and contact -->
+            <div class="iconCenter">
+                <a href="#"><img src="./icons/iconPackaging.svg" alt="Responsible packaging and with love Icon"
+                        width="150px">
+                    <p>Eco Packaging</p>
+                </a>
+            </div>
+            <div class="iconCenter">
+                <a href="https://www.etsy.com/fr/shop/CecicoCeramics?ref=l2-about-shopname&from_page=listing">
+                    <img src="./icons/iconEtsy.svg" alt="Etsy Shop Icon" width="150px">
+                    <p>Etsy Shop</p>
+                </a>
+            </div>
+            <div class="iconCenter">
+                <a href="./pages/contact.html">
+                    <img src="./icons/iconContact.svg" alt="Contact me Icon">
+                    <p>Contact me</p>
+                </a>
+            </div>
+        </section>
+        <section id="photoCollection">
+            <h1><a href="./pages/products.html">COLLECTIONS</a></h1>
+            <div class="collection">
+                <div class="collectionEgg">
+                    <button><a href="./pages/products.html">&#43;</a></button>
+                </div>
+                <div class="collectionFaces">
+                    <button><a href="./pages/products.html">&#43;</a></button>
+                </div>
+                <div class="collectionFlowers">
+                    <button><a href="./pages/products.html">&#43;</a></button>
+                </div>
+                <div class="collectionOthers">
+                    <button><a href="./pages/products.html">&#43;</a></button>
+                </div>
 
-    </div>
-
-    <!-- <div class="collectionHome">
-
-<img src="/photos/photoHome_Eggs.jpeg" alt="Differents eggs plates">
-    <img src="/photos/photoHome_Faces.jpeg" alt="Differents faces plates">
-    <img src="/photos/photoHome_Flowers.jpeg" alt="Differents flowers plates">
-    <img src="/photos/photoHome_Others.jpeg" alt="Differents magnets">
- </div>  
-</section> -->
+            </div>
 
     </main>
-<footer>
-    <div class="logoFooter">
-        <a href="index.html"><img src="/photos/LogoFooter.png" alt="Logo W&B CeciCo"></a>
-    </div>
+    <footer aria-label="Website Footer">
+        <div class="logoFooter">
+            <a href="./index.html"><img src="./photos/LogoFooter.png" alt="Logo W&B CeciCo"></a>
+        </div>
 
-    <div class="centerFooter">
-        <div class="networking">
-            <a href="https://www.instagram.com/cecico.ceramics/?hl=fr"><img src="/icons/icon_insta.png" alt="Logo instagram"></a>
-            <a href="https://www.facebook.com/people/Ceci-Co/100063812362345/"><img src="/icons/icon_facebook.png" alt="Logo Facebook"></a>
-            <a href="https://www.tiktok.com/@cecico.ceramics"><img src="/icons/icon_tiktok.png" alt="Logo TikTok"></a>
+        <div class="centerFooter">
+            <div class="networking">
+                <a href="https://www.instagram.com/cecico.ceramics/?hl=fr"><img src="./icons/icon_insta.png"
+                        alt="Logo instagram"></a>
+                <a href="https://www.facebook.com/people/Ceci-Co/100063812362345/"><img src="./icons/icon_facebook.png"
+                        alt="Logo Facebook"></a>
+                <a href="https://www.tiktok.com/@cecico.ceramics"><img src="./icons/icon_tiktok.png"
+                        alt="Logo TikTok"></a>
+            </div>
+            <div class="mail">
+                <p>cecicoceramics@gmail.com</p>
+            </div>
         </div>
-        <div class="mail">
-            <p>cecicoceramics@gmail.com</p>
+        <div class="footerRight">
+            <a href="./pages/privacyPolicy.html">
+                <p>Privacy Policy</p>
+            </a>
+            <a href="./pages/termsConditions.html">
+                <p>Terms & Conditions</p>
+            </a>
+            <a href="./pages/shippingRefund.html">
+                <p>Shipping & Refund Policy</p>
+            </a>
         </div>
-    </div>
-    <div class="footerRight">
-        <a href="/pages/privacyPolicy.html">
-            <p>Privacy Policy</p>
-        </a>
-        <a href="/pages/termsConditions.html">
-            <p>Terms & Conditions</p>
-        </a>
-        <a href="/pages/shippingRefund.html">
-            <p>Shipping & Refund Policy</p>
-        </a>
-    </div>
-</footer>
-<script type="module" src="/JavaScript/main.js"></script>
+    </footer>
+    <script type="module" src="./main.js"></script>
 </body>
 
 </html>

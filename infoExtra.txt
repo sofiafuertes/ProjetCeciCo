@@ -7,3 +7,9 @@ liens icons <a href="https://www.flaticon.es/iconos-gratis/embalaje-ecologico" t
 <a href="https://www.flaticon.com/free-icons/eco-friendly" title="eco friendly icons">Eco friendly icons created by Mihimihi - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/etsy" title="etsy icons">Etsy icons created by riajulislam - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/envelope" title="envelope icons">Envelope icons created by Slidicon - Flaticon</a>
+
+
+
+
+<i class="fa-solid fa-angle-left"></i> 
+<i class="fa-solid fa-angle-right"></i>
