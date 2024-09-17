@@ -9,15 +9,15 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <img class="logoHeader" src="/photos/logoHeader.png" alt="Logo CeciCo">
-            <div class="barRight">
-                <img src="/icons/icon_globe.png" alt="Icon language" width="30px">
-                <img src="/icons/icon_cart.png" alt="Icon cart" width="30px">
-                <i class="fa-solid fa-bars" style="color: #E6A197;" id="hamburgerMenu"></i>
-            </div>
-            <div class="centerNav">
-                <nav>
+        <nav aria-label="Main Navigation">
+            <div class="navbar">
+                <a href="/index.html"><img class="logoHeader" src="/photos/logoHeader.png" alt="Logo CeciCo"></a>
+                <div class="barRight">
+                    <img src="/icons/icon_globe.png" alt="Icon language" width="30px">
+                    <img src="/icons/icon_cart.png" alt="Icon cart" width="30px">
+                    <i class="fa-solid fa-bars" style="color: #E6A197;" id="hamburgerMenu"></i>
+                </div>
+                <div class="centerNav">
                     <ul class="navPages">
                         <li id="homePage"><a href="/index.html">HOME</a></li>
                         <li id="aboutMe"><a href="/pages/aboutMe.html">ABOUT ME</a></li>
@@ -30,8 +30,8 @@
                         <li id="account"><a href="/pages/account.html"><img src="/icons/icon_user.png"
                                     alt="Icon account" width="25px"></a></li>
                     </ul>
-                </nav>
-            </div>
+        </nav>
+        </div>
         </div>
     </header>
     <main>
@@ -42,7 +42,7 @@
                         <h2>LOGIN</h2>
                         <div class="pinkLine"></div>
                     </div>
-                    <p>Please fill in the information below:</p>
+                    <p>Please enter your mail and password:</p>
                     <form>
                         <input type="mail" id="mail" pattern="^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$" minlength="8"
                             maxlength="30" placeholder="Mail" autofocus required>
@@ -62,7 +62,7 @@
                         <h2>REGISTER</h2>
                         <div class="pinkLine"></div>
                     </div>
-                    <p>Please enter your mail and password:</p>
+                    <p>Please fill in the information below:</p>
                     <form>
                         <input type="text" id="firtsName" placeholder="First name" required>
                         <input type="text" id="lastName" placeholder="Last name" required>
@@ -108,7 +108,7 @@
             </a>
         </div>
     </footer>
-    <script type="module" src="/JavaScript/main.js"></script>
+    <script type="module" src="/main.js"></script>
 </body>
 
 </html>
