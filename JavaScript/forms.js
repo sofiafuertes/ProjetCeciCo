@@ -9,7 +9,7 @@ console.log(messageForm);
 
 const errorMessageName = document.createElement("div");
 nameForm.after(errorMessageName);
-errorMessageName.innerHTML = ``;
+errorMessageName.innerText = ``;
 errorMessageName.style.color = "red";
 
 /**
@@ -32,16 +32,16 @@ nameForm.addEventListener("blur", () => {
     }
     if (isFilledName) {
         if (nameRegex.test(nameForm.value)) {
-            errorMessageName.innerHTML = ``;
+            errorMessageName.innerText = ``;
         } else {
-            errorMessageName.innerHTML = `- Name is not correct. Please don't use numbers or special characters (except for accents).`;
+            errorMessageName.innerText = `- Name is not correct. Please don't use numbers or special characters (except for accents).`;
         }
     }
 });
 
 const errorMessageMail = document.createElement("div");
 mailForm.after(errorMessageMail);
-errorMessageMail.innerHTML = ``;
+errorMessageMail.innerText = ``;
 errorMessageMail.style.color = "red";
 
 let isFilledMail = false;
@@ -53,16 +53,16 @@ mailForm.addEventListener("blur", () => {
     }
     if (isFilledMail) {
         if (mailRegex.test(mailForm.value)) {
-            errorMessageMail.innerHTML = ``;
+            errorMessageMail.innerText = ``;
         } else {
-            errorMessageMail.innerHTML = `- Mail format is invalid. Please verify and try again.`;
+            errorMessageMail.innerText = `- Mail format is invalid. Please verify and try again.`;
         }
     }
 });
 
 const errorMessageText = document.createElement("div");
 messageForm.after(errorMessageText);
-errorMessageText.innerHTML = ``;
+errorMessageText.innerText = ``;
 errorMessageText.style.color = `red`;
 
 let isFilledMessage = false;
@@ -74,9 +74,11 @@ messageForm.addEventListener("blur", () => {
     }
     if (isFilledMessage) {
         if (messageRegex.test(messageForm.value)) {
-            errorMessageText.innerHTML = ``;
+            errorMessageText.innerText = ``;
         } else {
-            errorMessageText.innerHTML = `- Your message must be between 20 and 600 characters long. Please use only letters, numbers, spaces, and the following punctuation: . , ! ? ' - ( )`;
+            errorMessageText.innerText = `- Your message must be between 20 and 600 characters long. Please use only letters, numbers, spaces, and the following punctuation: . , ! ? ' - ( )`;
         }
     }
 });
+
+
